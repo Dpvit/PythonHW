@@ -5,5 +5,5 @@
 """
 
 print("Enter v[km/h],t[h]:")
-v,t = float(input("v: ")),float(input("t: "))
-print("Current position = ",v*t%123,"km")
+v , t = float(input("v: ")) , float(input("t: "))
+print("Current position = " , v * t % 123 , "km")

@@ -4,12 +4,12 @@
 """
 
 name = str(input("Enter name: "))
-print(name,"- чемпион!")
+print(name , "- чемпион!")
 
-print("-"*len(name))
+print("-" * len(name))
 
 name=name.lower()
-print("len = ", len(name))
+print("len = " , len(name))
 
 if 'п' in name:
     print(True)
@@ -19,5 +19,5 @@ else:
 counter = 0
 for char in name:
     if char == 'а':
-        counter+=1
+        counter += 1
 print(counter)

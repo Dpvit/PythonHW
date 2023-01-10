@@ -5,5 +5,5 @@
 """
 
 print("Enter resistances: ")
-R1,R2 = float(input("R1: ")),float(input("R2: "))
-print("Summary resistance = ",round(R1+R2,1))
+R1 , R2 = float(input("R1: ")) , float(input("R2: "))
+print("Summary resistance = ",round( R1 + R2 , 1))

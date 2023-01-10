@@ -7,22 +7,22 @@
 input_ = 'Privet Artem'.lower()
 print(input_)
 shift = 4
-def encode(input_):
+def my_encode(input_):
     output_ = ''
     for i in input_:
         output_+= chr(ord(i) + shift )
 
     return output_
 
-def decode(input_):
+def my_decode(input_):
     output_ = ''
     for i in input_:
         output_+= chr(ord(i) - shift )
 
     return output_
 
-tmp = encode(input_)
+tmp = my_encode(input_)
 print(tmp)
-tmp1 = decode(tmp)
+tmp1 = my_decode(tmp)
 print(tmp1)
 

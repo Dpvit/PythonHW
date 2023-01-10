@@ -34,8 +34,9 @@ class Clock:
             curr_h -= 24
         self.min = curr_min
         self.hours = curr_h
+        return Clock(self.hours,self.min)
 
 c1 = Clock(12,22)
 c2 = Clock(12,44)
-c1.__add__(c2)
-c1.show_time()
+c3=c1.__add__(c2)
+c3.show_time()

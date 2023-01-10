@@ -17,12 +17,14 @@ def calculate():
         if(answer == 1):
             print("!")
             break
-        if(answer == 2):
+        elif(answer == 2):
             min=tmp
             print(min)
-        if(answer == 3):
+        elif(answer == 3):
             max=tmp
             print(max)
+        else:
+            return -1
 
 calculate()
 

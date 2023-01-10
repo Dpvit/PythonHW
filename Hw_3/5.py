@@ -17,11 +17,11 @@ violator_songs = [
 ]
 
 n=int(input("Сколько песен?"))
-time = 0
+time_total = 0
 for i in range(n):
     name = input("Название песни:")
     for song_, time_ in violator_songs:
         if song_ == name:
-            time+=time_
+            time_total+=time_
 
-print(time)
+print(time_total)

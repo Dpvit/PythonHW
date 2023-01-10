@@ -6,4 +6,4 @@
 country = str(input("Enter country: "))
 city = str(input("Enter city: "))
 
-print("Государство -",country,"столица -",city)
+print("Государство -" , country , "столица -" , city)

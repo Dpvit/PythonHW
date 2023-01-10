@@ -10,13 +10,15 @@ while True:
     b = float(b)
     if oper == '+':
         print(a + b)
-    if oper == '-':
+    elif oper == '-':
         print(a - b)
-    if oper == '*':
+    elif oper == '*':
         print(a * b)
-    if oper == '/':
+    elif oper == '/':
         print(a / b)
-    if oper == '%':
+    elif oper == '%':
         print(a % b)
-    if oper == '//':
+    elif oper == '//':
         print(a // b)
+    else:
+        print("None")

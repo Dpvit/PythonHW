@@ -4,7 +4,7 @@
      Используйте функции min и max для нахождения наименьшего и наибольшего значений. Оставшееся число можно найти путем вычитания из суммы трех введенных чисел максимального и минимального.
 """
 print("Enter 3 int:")
-a,b,c = int(input(" a: ")), int(input(" b: ")), int(input(" c: "))
-max_=max(a,b,c)
-min_=min(a,b,c)
-print("Result = ",min_,"->",a+b+c-min_-max_,"->",max_,sep="")
+a , b , c = int(input(" a: ")), int(input(" b: ")), int(input(" c: "))
+max_=max(a , b , c)
+min_=min(a , b , c)
+print("Result = " , min_ , "->" , a + b + c-min_ - max_ , "->" , max_ , sep="")

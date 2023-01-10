@@ -13,24 +13,30 @@ class Base:
     def __init__(self) ->None:
         self.name = ''
     def __add__(self,other):
-        if type(self) == Water or type(other) == Water:
-            if type(other) == Air or type(self) == Air:
+        if type(self) == Water:
+            if type(other) == Air:
                 return Storm()
-            if type(other) == Fire or type(self) == Fire:
+            elif type(other) == Fire:
                 return Steam()
-            if type(other) == Earth or type(self) == Earth:
+            elif type(other) == Earth:
                 return Mud()
-        if type(self) == Air or type(other) == Air:
-            if type(other) == Fire or type(self) == Fire:
+            else:
+                return None
+        elif type(self) == Air:
+            if type(other) == Fire:
                 return Light()
-            if type(other) == Earth or type(self) == Earth:
+            elif type(other) == Earth:
                 return Dust()
-        if type(self) == Fire or type(other) == Fire:
-            if type(self) == Earth or type(other) == Earth:
+            else:
+                return None
+        elif type(self) == Fire:
+            if type(other) == Earth:
                 return Lave()
-        if type(self) == Storm or type(other) == Storm:
-            if type(self) == Dust or type(other) == Dust:
-                return DustStorm()
+            else:
+                return None
+        else:
+            return None
+            
 
 class Water(Base):
     def __init__(self) -> None:
@@ -53,9 +59,6 @@ class Steam(Base):
 class Mud(Base):
     def __init__(self) -> None:
         self.name = "Грязь"
-class DustStorm(Base):
-    def __init__(self) -> None:
-        self.name = "Песчаная Буря"
 class Light(Base):
     def __init__(self) -> None:
         self.name = "Молния"

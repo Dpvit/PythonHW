@@ -7,5 +7,5 @@ string = "объектно-ориентированный"
 print(string[0:6])
 print(string[9:17])
 print(string[14:17])
-print(string[4]+string[7]+string[14])
-print(string[10]+string[12:15]+string[19])
+print(string[4] + string[7] + string[14])
+print(string[10] + string[12:15] + string[19])
